@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: ai-usage-dashboard
+Version: 0.1.0
+Summary: Local read-only dashboard that estimates Claude Code usage costs from local transcripts. No network, no writes to source paths.
+Requires-Python: >=3.10

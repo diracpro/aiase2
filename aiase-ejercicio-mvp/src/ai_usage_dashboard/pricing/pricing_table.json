@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "currency": "USD",
+  "unit": "per_mtok",
+  "_comment": "Local, versioned API pricing. NOT real billing. No plans, subscriptions, discounts, or cache billing represented (PRD §6). Update only via explicit user action; never fetched over the network during analysis.",
+  "default_stale_after_days": 120,
+  "models": [
+    {
+      "provider": "anthropic",
+      "model": "claude-opus-4-8",
+      "aliases": ["claude-opus-4-8[1m]", "claude-opus-4-8-20251101", "opus-4.8"],
+      "input_price": 15.0,
+      "output_price": 75.0,
+      "unit": "per_mtok",
+      "source": "https://www.anthropic.com/pricing",
+      "consulted_at": "2026-06-18"
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "aliases": ["claude-sonnet-4-6-20250930", "sonnet-4.6"],
+      "input_price": 3.0,
+      "output_price": 15.0,
+      "unit": "per_mtok",
+      "source": "https://www.anthropic.com/pricing",
+      "consulted_at": "2026-06-18"
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-haiku-4-5",
+      "aliases": ["claude-haiku-4-5-20251001", "haiku-4.5"],
+      "input_price": 1.0,
+      "output_price": 5.0,
+      "unit": "per_mtok",
+      "source": "https://www.anthropic.com/pricing",
+      "consulted_at": "2026-06-18"
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-3-5-sonnet",
+      "aliases": ["claude-3-5-sonnet-20241022", "claude-3-5-sonnet-latest"],
+      "input_price": 3.0,
+      "output_price": 15.0,
+      "unit": "per_mtok",
+      "source": "https://www.anthropic.com/pricing",
+      "consulted_at": "2026-06-18"
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-3-5-haiku",
+      "aliases": ["claude-3-5-haiku-20241022", "claude-3-5-haiku-latest"],
+      "input_price": 0.8,
+      "output_price": 4.0,
+      "unit": "per_mtok",
+      "source": "https://www.anthropic.com/pricing",
+      "consulted_at": "2026-06-18"
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-3-opus",
+      "aliases": ["claude-3-opus-20240229", "claude-3-opus-latest"],
+      "input_price": 15.0,
+      "output_price": 75.0,
+      "unit": "per_mtok",
+      "source": "https://www.anthropic.com/pricing",
+      "consulted_at": "2026-06-18"
+    }
+  ]
+}

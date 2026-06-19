@@ -1,0 +1,19 @@
+[project]
+name = "ai-usage-dashboard"
+version = "0.1.0"
+description = "Local read-only dashboard that estimates Claude Code usage costs from local transcripts. No network, no writes to source paths."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+ai-usage-dashboard = "ai_usage_dashboard.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ai_usage_dashboard = ["pricing/*.json", "web/*"]

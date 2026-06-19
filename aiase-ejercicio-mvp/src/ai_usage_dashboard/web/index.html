@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Usage Cost Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>AI Usage Cost Dashboard</h1>
+    <span class="badge" id="generated"></span>
+  </header>
+
+  <div class="disclaimer" id="disclaimer" role="note"></div>
+
+  <main>
+    <section class="cards" id="kpis"></section>
+
+    <section class="integrity" id="integrity"></section>
+
+    <div class="grid">
+      <section class="panel">
+        <h2>Gasto por día</h2>
+        <div id="by-day" class="bars"></div>
+      </section>
+      <section class="panel">
+        <h2>Gasto por modelo</h2>
+        <div id="by-model" class="bars"></div>
+      </section>
+    </div>
+
+    <section class="panel">
+      <h2>Sesiones</h2>
+      <table id="sessions">
+        <thead>
+          <tr>
+            <th>Fecha</th><th>Modelo</th><th>Input</th><th>Output</th>
+            <th>Mensajes</th><th>Costo</th><th>Estado</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="panel" id="discovery-panel">
+      <h2>Detección (P1): Codex &amp; Skills</h2>
+      <div id="discovery"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Advertencias</h2>
+      <ul id="warnings" class="warnings"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>Lectura local · sin red durante el análisis · no escribe en rutas fuente</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

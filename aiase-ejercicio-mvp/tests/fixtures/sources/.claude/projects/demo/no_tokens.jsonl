@@ -1,0 +1,2 @@
+{"type":"user","sessionId":"sess-notok","timestamp":"2026-06-15T10:00:00Z","message":{"role":"user","content":"sin uso"}}
+{"type":"assistant","sessionId":"sess-notok","timestamp":"2026-06-15T10:00:03Z","message":{"role":"assistant","model":"claude-sonnet-4-6"}}
